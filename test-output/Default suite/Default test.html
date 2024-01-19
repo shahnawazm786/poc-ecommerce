@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jan 14 18:44:59 IST 2024</td>
+<td>Started on:</td><td>Fri Jan 19 23:05:45 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15342 ms)</td>
+<tr><td>Total time:</td><td>45 seconds (45738 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,8 +76,29 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Runners.MyRunner.runScenario()'><b>runScenario</b><br>Test class: Runners.MyRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login Accounts", "Login Functions"</td>
-<td></td>
-<td>11</td>
+<td><div><pre>java.lang.AssertionError: expected [MlpmShYa] but found [Mohammad Shahnawaz]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at pages.SignInPage.verifyUserLoginSuccessfully(SignInPage.java:81)
+	at steps.StepDefinitions.iVerifyTheUserIsLoginSuccessfully(StepDefinitions.java:70)
+	at ✽.I verify the user is login successfully(file:///C:/testng-project/poc-ecommerce/src/test/resources/features/account_register.feature:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1638796611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1638796611'><pre>java.lang.AssertionError: expected [MlpmShYa] but found [Mohammad Shahnawaz]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at pages.SignInPage.verifyUserLoginSuccessfully(SignInPage.java:81)
+	at steps.StepDefinitions.iVerifyTheUserIsLoginSuccessfully(StepDefinitions.java:70)
+	at ✽.I verify the user is login successfully(file:///C:/testng-project/poc-ecommerce/src/test/resources/features/account_register.feature:19)
+</pre></div></td>
+<td>42</td>
 <td>Runners.MyRunner@1c7696c6</td></tr>
 </table><p>
 </body>

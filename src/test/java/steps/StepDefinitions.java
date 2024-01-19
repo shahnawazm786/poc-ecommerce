@@ -67,7 +67,7 @@ public class StepDefinitions {
 	}
 	@And("^I verify the user is login successfully")
 	public void iVerifyTheUserIsLoginSuccessfully() {
-		//signinPage.verifyUserLoginSuccessfully();
+		signinPage.verifyUserLoginSuccessfully();
 	}
 	
 
