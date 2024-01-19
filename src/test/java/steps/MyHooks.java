@@ -38,10 +38,10 @@ public class MyHooks {
 	public void tearDown(Scenario scenario) {
 		if(scenario.isFailed()) {
 			// capture screen
-			//final byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-            //scenario.attach(screenshot, "image/png", scenario.getName());
-			File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			
+			final byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot, "image/png", scenario.getName());
+			//File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			//String dest=System.getProperty("user.dir")+"\\ExtentReports\\"
 		}
 		driver.quit();
 	}
