@@ -1,0 +1,6 @@
+01-25-2024 21:58:46 StepDefinitions.java INFO  [TestNG-PoolService-0] steps.StepDefinitions 26 - -- Open home page
+01-25-2024 21:58:46 StepDefinitions.java INFO  [TestNG-PoolService-0] steps.StepDefinitions 28 - -- Page opened
+01-25-2024 21:58:46 StepDefinitions.java INFO  [TestNG-PoolService-0] steps.StepDefinitions 32 - click on account page
+01-25-2024 21:58:48 StepDefinitions.java INFO  [TestNG-PoolService-0] steps.StepDefinitions 34 - clicked on account page
+01-25-2024 21:58:48 StepDefinitions.java INFO  [TestNG-PoolService-0] steps.StepDefinitions 38 - verify sign in page
+01-25-2024 21:58:48 StepDefinitions.java INFO  [TestNG-PoolService-0] steps.StepDefinitions 40 - verified sign in page
