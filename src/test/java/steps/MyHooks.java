@@ -39,7 +39,8 @@ public class MyHooks {
 		if(scenario.isFailed()) {
 			// capture screen
 			final byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-            scenario.attach(screenshot, "image/png", scenario.getName());
+            
+			scenario.attach(screenshot, "image/png", scenario.getName());
 			//File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			
 		}
