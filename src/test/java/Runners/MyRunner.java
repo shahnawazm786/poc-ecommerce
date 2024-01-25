@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 		tags="@signin",
 		monochrome = true,
 		dryRun = false,
-		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+		plugin = {"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:target/rerun.txt"}
 
 		)
