@@ -3,6 +3,7 @@ package steps;
 import java.io.File;
 import java.time.Duration;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -39,7 +40,7 @@ public class MyHooks {
 		if(scenario.isFailed()) {
 			// capture screen
 			final byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-            
+           // FileUtils.writeByteArrayToFile(file, screenshot);
 			scenario.attach(screenshot, "image/png", scenario.getName());
 			//File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			
